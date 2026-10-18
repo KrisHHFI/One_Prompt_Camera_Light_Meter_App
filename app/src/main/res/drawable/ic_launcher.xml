@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Simple aperture-blade launcher icon -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path android:fillColor="#FF111827" android:pathData="M24,2a22,22 0,1 1,0 44a22,22 0,1 1,0 -44z" />
+    <path android:fillColor="#FFF59E0B" android:pathData="M24,8a16,16 0,1 1,0 32a16,16 0,1 1,0 -32z" />
+    <path android:fillColor="#FF111827"
+        android:pathData="M24,17l6.06,3.5v7l-6.06,3.5l-6.06,-3.5v-7z" />
+    <path android:fillColor="#FF111827"
+        android:pathData="M24,8l2,9l-2,0zM37.86,16l-6.75,6.27l-1,-1.73zM37.86,32l-8.8,-2.73l1,-1.73zM24,40l-2,-9l2,0zM10.14,32l6.75,-6.27l1,1.73zM10.14,16l8.8,2.73l-1,1.73z" />
+</vector>

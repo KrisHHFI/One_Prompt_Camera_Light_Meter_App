@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF000000"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextureView
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:id="@+id/spot"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:background="@drawable/spot_box" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_margin="8dp"
+            android:background="#99000000"
+            android:paddingLeft="10dp"
+            android:paddingTop="4dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="4dp"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF111111"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="—"
+            android:textColor="#FFF59E0B"
+            android:textSize="44sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:textColor="#FFBBBBBB"
+            android:textSize="14sp" />
+
+        <!-- Fixed setting row (aperture in A mode, shutter in S mode) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/set_minus"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:text="−"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/set_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#FFFFFFFF"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/set_plus"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- ISO row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/iso_minus"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:text="−"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/iso_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#FFFFFFFF"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/iso_plus"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Exposure compensation row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/comp_minus"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:text="−"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/comp_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/comp_plus"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_mode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/btn_metering"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/btn_hold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
